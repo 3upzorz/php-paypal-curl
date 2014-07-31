@@ -2,17 +2,6 @@
 
 class PayPalCurl{
 
-	//REST CREDENTIALS
-
-	//place paypal client id here
-	private static $client_id = "";
-	//place paypal client secret here
-	private static $client_secret = "";
-	//place base uri here for testing/not testing
-	//sandbox = https://api.sandbox.paypal.com/v1
-	//live    = https://api.paypal.com/v1
-	private static $base_uri = "https://api.sandbox.paypal.com/v1";
-
 	//CLASSIC CREDENTIALS
 	//TEST
 	// private static $base_uri_classic = "https://api-3t.sandbox.paypal.com/nvp";
@@ -33,6 +22,17 @@ class PayPalCurl{
 
 	public static $redirectUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=";
 	public static $currencyCode = "USD";
+	
+	//UNUSED REST CREDENTIALS (for the unused REST functions)
+
+	//place paypal client id here
+	private static $client_id = "";
+	//place paypal client secret here
+	private static $client_secret = "";
+	//place base uri here for testing/not testing
+	//sandbox = https://api.sandbox.paypal.com/v1
+	//live    = https://api.paypal.com/v1
+	private static $base_uri = "https://api.sandbox.paypal.com/v1";
 
 	/**
 	 * cURL the data for the classic NVP api
