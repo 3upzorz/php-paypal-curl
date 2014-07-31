@@ -153,7 +153,7 @@ class PayPalCurl{
 		return $result;
 	}
 
-
+/********** Unused REST API calls *****************/
 	//TODO REST add checking to see if token was retreived successfully on methods that use getToken
 	/**
 	 * Obtains the object containing the oath token or false if failure
@@ -500,4 +500,5 @@ class PayPalCurl{
 		//all required indexes are not empty
 		return true;
 	}
+/********** END Unused REST API calls *****************/
 }
